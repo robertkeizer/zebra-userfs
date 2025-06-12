@@ -25,7 +25,7 @@ defmodule Userfs.MixProject do
 
   defp deps do
     [
-      {:efuse, "~> 1.0.2"},
+      {:efuse, git: "https://github.com/robertkeizer/erlang-efuse.git", branch: "master"},
       {:dialyxir, "~> 0.5.0", only: [:dev, :test], runtime: false},
       {:ex_doc, ">= 0.20.2", only: [:dev], runtime: false},
       {:excoveralls, "~> 0.11.1", only: [:test], runtime: false},
